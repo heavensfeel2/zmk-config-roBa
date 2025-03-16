@@ -29,7 +29,7 @@
         };
 
         next_tab {
-            bindings = <&kp LC(PAGE_DOWN)>;
+            bindings = <&kp LC(PAGE_UP)>;
             key-positions = <11 12>;
             layers = <0 4>;
         };
