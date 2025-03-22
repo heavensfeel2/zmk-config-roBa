@@ -69,6 +69,12 @@
             key-positions = <10 11>;
             layers = <4 0 2 3>;
         };
+
+        mb3Click {
+            bindings = <&mkp MB3>;
+            key-positions = <21 20>;
+            layers = <4>;
+        };
     };
 
     macros {
