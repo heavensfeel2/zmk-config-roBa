@@ -139,7 +139,7 @@
 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                        &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp PIPE    &kp BACKSLASH
 &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp F2       &kp F5   &kp NUMBER_6  &kp N7         &kp N8        &kp N9      &lt 5 N0
 &kp LA(F1)       &kp LA(F2)    &kp LA(F3)    &kp LA(F4)    &kp LA(F5)   &kp F11      &kp F12  &kp LA(F6)    &kp LA(F7)     &kp LA(F8)    &kp LA(F9)  &kp LA(F10)
-&trans           &trans        &trans        &trans        &trans       &trans       &trans   &trans                                                 &kp F2
+&trans           &trans        &trans        &trans        &trans       &trans       &trans   &trans                                                 &trans
             >;
         };
 
