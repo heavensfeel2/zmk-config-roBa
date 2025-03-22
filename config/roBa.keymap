@@ -58,12 +58,6 @@
             layers = <0>;
         };
 
-        MB3 {
-            bindings = <&mkp MB3>;
-            key-positions = <20 21>;
-            layers = <4>;
-        };
-
         Ctrl+Shift {
             bindings = <&kp LC(LEFT_SHIFT)>;
             key-positions = <39 41>;
