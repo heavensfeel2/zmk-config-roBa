@@ -73,7 +73,7 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-            layers = <4 0 1 2 3>;
+            layers = <4 0 2 3>;
         };
     };
 
