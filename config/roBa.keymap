@@ -127,10 +127,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans        &trans        &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                          &none
             >;
         };
 
@@ -139,16 +139,16 @@
 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                        &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp PIPE    &kp BACKSLASH
 &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp F2       &kp F5   &kp NUMBER_6  &kp N7         &kp N8        &kp N9      &lt 5 N0
 &kp LA(F1)       &kp LA(F2)    &kp LA(F3)    &kp LA(F4)    &kp LA(F5)   &kp F11      &kp F12  &kp LA(F6)    &kp LA(F7)     &kp LA(F8)    &kp LA(F9)  &kp LA(F10)
-&trans           &trans        &trans        &trans        &trans       &trans       &trans   &trans                                                 &trans
+&trans           &trans        &trans        &trans        &trans       &trans       &trans   &trans                                                 &none
             >;
         };
 
         ARROW {
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp LEFT_PARENTHESIS  &kp LESS_THAN                                     &kp GREATER_THAN   &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp END          &kp ESC
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp PLUS          &kp PAGE_UP      &kp PAGE_DOWN  &kp EQUAL          &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp PLUS          &kp PAGE_UP      &kp PAGE_DOWN  &kp EQUAL          &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON
 &trans  &trans          &kp COLON       &kp SINGLE_QUOTE      &kp LEFT_BRACKET  &trans           &trans         &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES      &kp SEMI        &trans           &kp PIPE
-&trans  &trans          &trans          &trans                &trans            &trans           &trans         &trans                                                                     &to 6
+&trans  &trans          &trans          &trans                &trans            &trans           &trans         &trans                                                                     &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -159,25 +159,25 @@
 &to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                                                            &to_layer_0 Y           &to_layer_0 U  &to_layer_0 I      &to_layer_0 O       &to_layer_0 P
 &kp A                 &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G           &to_layer_0 TAB                   &to_layer_0 MINUS              &to_layer_0 H           &mkp MB1       &to_layer_0 K      &mkp MB2            &to_layer_0 MINUS
 &mt LEFT_SHIFT Z      &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B           &to_layer_0 LEFT_PARENTHESIS      &to_layer_0 RIGHT_PARENTHESIS  &to_layer_0 N           &to_layer_0 M  &to_layer_0 COMMA  &to_layer_0 PERIOD  &mt LEFT_SHIFT SLASH
-&to_layer_0 LEFT_ALT  &trans         &trans         &trans         &lt_to_layer_0 2 SPACE  &mt RCTRL DELETE                  &to_layer_0 BACKSPACE          &lt_to_layer_0 3 ENTER                                                        &trans
+&to_layer_0 LEFT_ALT  &trans         &trans         &trans         &lt_to_layer_0 2 SPACE  &mt RCTRL DELETE                  &to_layer_0 BACKSPACE          &lt_to_layer_0 3 ENTER                                                        &none
             >;
         };
 
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&none   &none   &none   &none   &none   &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &none
             >;
         };
 
         layer_6 {
             bindings = <
-&trans        &trans        &trans        &trans        &trans                                 &bt BT_CLR  &trans  &trans  &trans  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans      &trans       &trans      &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &bootloader  &trans      &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans       &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&none   &none   &none   &none   &none   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &none
             >;
         };
     };
